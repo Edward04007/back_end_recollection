@@ -14,10 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.recollection.back_end_recollection.Model.Model_API;
 import com.recollection.back_end_recollection.Repository.Repository_Recollection;
 
-@CrossOrigin(origins = {
-    "http://localhost:3000/",
-    "https://front-end-recollection.vercel.app"
-} , maxAge = 3600)
+@CrossOrigin
 @RestController
 @RequestMapping(value = "/api")
 public class Controller_API {
