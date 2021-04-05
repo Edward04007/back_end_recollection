@@ -39,4 +39,8 @@ public class Model_API implements Serializable{
 
     @Column(nullable = false)
     private String alternative_04;
+
+    @Column(nullable = false)
+    private String feedback;
+
 }
