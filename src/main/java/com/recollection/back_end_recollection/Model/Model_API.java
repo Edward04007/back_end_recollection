@@ -1,7 +1,7 @@
 package com.recollection.back_end_recollection.Model;
 
-import lombok.Getter;
-import lombok.Setter;
+
+import lombok.Data;
 import java.io.Serializable;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -10,8 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
-@Getter
-@Setter
+@Data
 @Entity
 @Table(name = "TB_questions_recollection")
 public class Model_API implements Serializable{
