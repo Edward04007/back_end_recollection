@@ -1,31 +1,27 @@
 package com.recollection.back_end_recollection.Controller;
 
 
+import io.swagger.annotations.Api;
+import org.springframework.http.HttpStatus;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.data.domain.Page;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.CrossOrigin;
-
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
-
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-
 import com.recollection.back_end_recollection.Model.Model_API;
+import com.recollection.back_end_recollection.Service.Service_API;
 import com.recollection.back_end_recollection.Model.Model_API_Page;
 import com.recollection.back_end_recollection.Repository.Repository_Recollection;
-import com.recollection.back_end_recollection.Service.Service_API;
 
+@CrossOrigin
 @RestController
-@CrossOrigin(origins = "*")
 @RequestMapping(value = "/api")
 @Api(value = "API REST Recollection")
 public class Controller_API {
